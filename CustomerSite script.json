@@ -1,0 +1,37 @@
+{
+  "$schema": "schema.json",
+  "actions": [
+    {
+      "verb": "createSPList",
+      "listName": "Customer Contacts",
+      "templateType": 105,
+      "subactions": [
+        {
+          "verb": "SetDescription",
+          "description": "Customer Contact List"
+        }
+      ]
+    },
+    {
+     "verb": "addNavLink",
+     "url": "/Lists/Customer Contacts",
+     "displayName": "Customer Contacts",
+     "isWebRelative": true
+    },
+    {
+       "verb": "removeNavLink",
+       "displayName": "Pages",
+       "isWebRelative": true
+     },
+    {
+       "verb": "removeNavLink",
+       "displayName": "Site contents",
+       "isWebRelative": true
+     },
+    {
+    "verb": "joinHubSite",
+    "hubSiteId": "INSERTYOURHUBIDHERE"
+    }
+  ],
+  "version": 1
+}
